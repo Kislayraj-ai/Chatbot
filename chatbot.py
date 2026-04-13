@@ -6,6 +6,7 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+from pathlib import Path
 
 load_dotenv()
 if os.environ.get('API_KEY'):
@@ -15,7 +16,8 @@ local_llm =  ChatGoogleGenerativeAI(api_key=os.environ.get('API_KEY'),
 )
 
 
-doc_path = "./knowledge/solar_system.pdf"
+BASE_DIR = Path(__file__).parent          # folder where your script lives
+doc_path = BASE_DIR / "knowledge" / "solar_system.pdf"
 local_loader = PyPDFLoader(doc_path)
 
 docs = local_loader.load()

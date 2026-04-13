@@ -1,1 +1,7 @@
-INSERT INTO "embedding_metadata" ("id", "key", "string_value", "int_value", "float_value", "bool_value") VALUES (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?) ON CONFLICT ("id", "key") DO UPDATE SET "string_value" = "excluded"."string_value", "int_value" = "excluded"."int_value", "float_value" = "excluded"."float_value", "bool_value" = "excluded"."bool_value"ÿÿÿÿÿÿÿ
+Meteorites 
+ï‚· Meteoroids are formed due to the collisions between asteroids.  
+ï‚· They are fragments of rocks floating about in space.  
+ï‚· Sometimes they come across earth and fall into the earthâ€™s atmosphere. Thatâ€™s when they become 
+meteors or â€œshooting starsâ€.  
+ï‚· Most of these meteors canâ€™t reach earthâ€™s surface and burn up in the atmosphere due to the friction 
+with air.ÿÿÿ
